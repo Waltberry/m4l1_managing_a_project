@@ -1,0 +1,25 @@
+fun main() {
+
+	val fruits = arrayOf("banana", "pear", "strawberry", "pineapple", "mango", "watermelon", "apple", "orange")
+
+    //val loudFruits = fruits.map ( fun(item: String):String { return item.toUpperCase() } )	// full anonymous function
+
+    //val loudFruits = fruits.map ( fun(item: String):String = item.toUpperCase() )	// replace block with single statement
+
+    //val loudFruits = fruits.map ( fun(item):String = item.toUpperCase() )	// parameter type can be inferred
+
+    //val loudFruits = fruits.map ( fun(item) = item.toUpperCase() )	// return type can be inferred
+
+    //val loudFruits = fruits.map ( { item:String -> item.toUpperCase() } )  	// use full lambda expression
+
+    //val loudFruits = fruits.map { item:String -> item.toUpperCase() }		// trailing lambda
+
+    //val loudFruits = fruits.map { it -> return@map it.toUpperCase() } 	// implicit parameter it
+
+    //val loudFruits = fruits.map { return@map it.toUpperCase() } 	// single parameter that can be inferred
+
+    val loudFruits = fruits.map { it.toUpperCase() }		// last evaluated expression is automatically returned
+
+    println(loudFruits.toString())
+    
+}

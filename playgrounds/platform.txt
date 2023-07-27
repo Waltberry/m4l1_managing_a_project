@@ -1,0 +1,20 @@
+import java.util.*
+
+fun main() {
+    var date = Date("25/12/2020 10:12")		// native Kotlin non-nullable Date type
+    //var date = Calendar.getInstance().time		// platform type Date! (may be nullable may be non-nullable)
+
+    println(date)
+
+    // some other part of your code sets it to null...
+    //date = null
+    // something bad happens at run time
+
+    // cast it to a native type explicitly
+
+  	//var nativeDate : Date = date					// native Kotlin non-nullable Date type
+
+    //println(nativeDate)
+
+    // nativeDate = null	// this will not compile = safer
+}

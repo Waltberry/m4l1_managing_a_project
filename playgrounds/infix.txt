@@ -1,0 +1,17 @@
+infix fun String.asRole(role: String) : String {
+
+    return role + " " + this
+
+}
+
+fun main() {
+
+    var crew = ArrayList<String>()
+
+    crew.add("Mary Earhart" asRole "Captain")
+    crew.add("Joseph Daniels" asRole "First Officer")
+    crew.add("Jack Lewis" asRole "Flight Attendant")
+    crew.add("Yolanda Clark" asRole "Flight Attendant")
+
+    crew.forEach{ println(it) }
+}

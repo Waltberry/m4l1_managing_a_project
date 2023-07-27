@@ -1,0 +1,16 @@
+fun main() {
+
+	val fruits = arrayOf("banana", "pear", "strawberry", "pineapple", "mango", "watermelon", "apple", "orange")
+
+    val loudFruits = fruits.map { it.toUpperCase() }
+
+    println(loudFruits.toString())
+
+    //val longNames = fruits.filter { it.length > 6 }
+
+    //println(longNames.toString())
+
+   	//val indexedFruits = fruits.mapIndexed { index, it -> index.toString() + " " + it }    // the parameters are mandatory!
+
+    //indexedFruits.forEach { println(it) }
+}
